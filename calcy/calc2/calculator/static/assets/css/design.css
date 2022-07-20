@@ -1,0 +1,14 @@
+.input{
+	padding-top:50px;
+	padding-left: 200px;
+}
+
+.heading{
+       text-align: center;
+       text-decoration-line: solid, 0.5px, grey, below;
+}
+
+.page{
+	background-color: grey;
+}
+

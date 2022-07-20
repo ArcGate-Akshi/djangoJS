@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>calculator session and cookies</title>
+    <link href="{% static '/assets/css/design.css' %}"  type="text/css" rel="stylesheet">
+</head>
+<body class="page">
+<header>
+
+ <h1 class = "heading">CALCULATOR </h1>
+ <h2 class ="heading"  name = "result" id="result"></h2>
+</header>
+<section>
+ <div  class = "input">
+  <input type="number" name="first" placeholder="Enter first number" required=""  id="num1"/>
+    <br><br>
+    <input type="number" name="second" placeholder="Enter second number" required="" id="num2"/>
+    <br>
+   <div class ="buttons">
+    <button onclick="calculate(plus)" name ="add" value="plus" id="plus" >+</button>
+    <button onclick="calculate(minus)" name ="sub" value="minus" id="minus" >-</button>
+    <button onclick="calculate(pro)" name ="pro" value="pro"  id="pro"  >*</button>
+    <button onclick="calculate(div)" name ="divi" value="div" id="div" >/</button>
+    <button onclick="cl()"  >c</button>
+   </div>
+</div>
+  </section>
+  <script type="text/javascript" src="{% static 'assets/js/base.js' %}"></script>
+  <footer></footer>
+</body>
+</html>
